@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+
+/* Set the box-sizing for all elements to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: yellowgreen;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  width: 50%;
+  background-color: yellowgreen;
+  padding: 20px;
+
+}
+
+.right-column {
+  width: 20%;
+  padding: 20px;
+  background-color: yellowgreen;
+  float: right;
+}
+
+    figure {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      
+      figure img {
+        width: 100%;
+      }
+      
+/* 1024 - tablet
+768 - phone
+420 - phone portrait */
+
+@media screen and (max-width: 1024px) {
+  .left-column {
+    background-color: yellowgreen;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-column {
+    background-color: yellowgreen;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+}
